@@ -1,0 +1,89 @@
+/*start*/
+/*======================================================================*/
+/*
+  title: Sage's Fanpage Stylesheet
+  author: Dada
+*/
+/*======================================================================*/
+/*global selectors*/
+/*======================================================================*/
+
+/*universal reset*/
+/*
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+*/
+
+/*global variables*/
+:root {
+    --sage: #9BA17B;
+}
+
+/*rem font size*/
+html {
+  /*font-size: 62.5%;*/ /*base 10 rem*/
+    font-size: calc(1em + 1vw); /*responsive text*/
+}
+
+/*bg and others*/
+body {
+  /*font-size: 100%;*/ /*IE font reset*/
+    background-color: var(--sage);
+}
+/*======================================================================*/
+/*local selectors*/
+/*======================================================================*/
+
+/*background colors (color value = sage: #9BA17B)*/
+/*body {background-color: #9BA17B;}*/ /*declared above in global*/
+
+.red-bg {background-color: red;}
+
+.black-bg {background-color: black;}
+
+/*python projects*/
+code {color: blue;}
+
+/*typefaces*/
+h1, h2, h3, h4, h5, h6 {font-family: Helvetica, sans-serif;}
+
+p {font-family: Times New Roman, serif;} /*or Garamond*/
+
+/*responsive text*/
+/*html {font-size: calc(1em + 1vw);}*/ /*declared above in global*/
+
+/*responsive image*/
+img {
+    max-width: 100%;
+    height: auto;
+}
+/*======================================================================*/
+/*layout selectors*/
+/*======================================================================*/
+
+/*flexbox layout*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+/*
+.flex-item {
+
+}
+*/
+
+/*random styles*/
+hr {
+    background-color: lightsalmon;
+    color: lightsalmon;
+}
+/*======================================================================*/
+/*end*/

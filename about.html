@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+		<title>About</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="keywords" content="Sage, angel, miracle, snuggler, son">
+		<meta name="description" content="About">
+		<meta name="author" content="Dada">
+        <link rel="stylesheet" href="style/normalize.css"/>
+        <link rel="stylesheet" href="style/style.css"/>
+	</head>
+	<body id="" class="">
+        <div id="top"></div>
+		<header id="" class="">
+			<h1>About</h1>
+			<hr/>
+			<a href="home.html">Back to Homepage</a>
+			<hr/>
+		</header>
+		<main id="" class="">
+			<h2>Constraints</h2>
+			<p>
+			<b>There were 3 important constraints for this website project:</b>
+			<ol type="I">
+				<li>The site must be coded using only HTML</li>
+				<li>It must be coded in only Notepad</li>
+				<li>It cannot utilize templates or WordPress</li>
+			</ol>
+			</p>
+			<h2>Reasoning</h2>
+			<p>
+			The reasoning for these constraints is that they will force the site to be built completely from scratch.<br/>
+			This in turn will hopefully yield a firm understanding of the foundations of web development.<br/>
+			By using an extremely basic text editor, such as Notepad, the crutch of auto code formatting included with IDE's is removed.<br/>
+			And, of course, using a template/boilerplate would have been a huge crutch too.<br/> 
+			Similarly, someone can make a website with a CSM like WordPress without needing to know HTML at all.</br>
+			The reason for only using HTML is explained below.<br/>
+			<br/>
+			<b>Modern websites are built using 3 languages:</b>
+			<ol type="I">
+				<li>HTML - the foundation - formatting, text, links, images</li>
+				<li>CSS - styling</li>
+				<li>JavaScript - scripting</li>
+			</ol>
+			So, start with HTML, and then the next steps are to augment the site by layering on CSS, and then, finally, to layer on JS.<br/>
+			It is also possible to go one step further at that point and incorporate JS frameworks, such as React.<br/>
+			JS is also the middleman for back-end database languages such as mySQL, but that will be beyond the scope of this site.<br/>
+			As a result of the site using only HTML, it has that mid 90's retro aesthetic, and it also cannot incorporate input fields.<br/>
+			My one exception is that I used an inline CSS element to set the background color for the whole site to the color <i>sage</i>.
+			</p>
+			<h2>Source Code</h2>
+			<p>
+			All HTML code is interpreted by your browser, and as a result, it's open source.<br/>
+			Therefore, you can view any website's source code.<br/>
+			To do this, right click on a webpage and select <i>view page source</i>.<br/>
+			Alternatively, you can use the keyboard shortcut Control+U in Windows or Command+U in Apple.<br/>
+			This will show you my source code so you can see exactly how I made this site.<br/>
+			</p>
+			<h2>Portfolio</h2>
+			<p>
+			<b>Programming Language Competency:</b>
+			<ol type="i">
+				<li>HTML</li>
+				<li>CSS - Vanilla/Sass/Bootstrap</li>
+				<li>Python</li>
+				<li>CLI/Shell - BASH/CMD</li>
+			</ol>
+			<b>Other Relevant Areas of Competency:</b>
+			<ol type="i">
+				<li>Hardware - PC Build</li>
+				<li>Networking - Security/Config</li>
+				<li>Troubleshooting - Windows OS</li>
+			</ol>
+            </p>
+            <!-- Coding Portfolio -->
+			<h3 id="code">Python Projects:</h3>
+			<h4>Example 1</h4>
+            <pre><code>
+# name guessing game:
+def name_game():
+    print("\nWelcome to the name guessing game. \nYou get three guesses. ")
+    name = "Sage"
+    guess = input("\nEnter your first guess: ")
+    counter = 1
+    while guess != name and counter != 3:
+        guess = input("Wrong, guess again: ")
+        counter += 1
+    if guess != name:
+        print("\nSorry, you lose. \n")
+    else:
+        print("\nCorrect, you win! \n")
+name_game()
+# end
+            </code></pre>
+			<h4>Example 2</h4>
+            <pre><code>
+# automated geometry test:
+
+
+test_array = [
+    "\n1. What is the name of a 3 sided polygon?\n\na) Square\nb) Triangle\nc) Pentagon\n\nAnswer: ",
+    "\n2. What is the name of a 4 sided polyhedron?\n\na) Cube\nb) Tetrahedron\nc) Octahedron\n\nAnswer: ",
+    "\n3. What is the square root of 16?\n\na) 4\nb) 5\nc) 6\n\nAnswer: ",
+    "\n4. What is the cube root of 27?\n\na) 5\nb) 4\nc) 3\n\nAnswer: ",
+]
+
+
+class TestClass:
+    def __init__(self, prompt, answer):
+        self.prompt = prompt
+        self.answer = answer
+
+
+test_object = [
+    TestClass(test_array[0], "b"),
+    TestClass(test_array[1], "b"),
+    TestClass(test_array[2], "a"),
+    TestClass(test_array[3], "c"),
+]
+
+
+def test_function(test_object):
+    print("\n*Start of Test*")
+    test_score = 0
+    for test_question in test_object:
+        input_answer = input(test_question.prompt)
+        if input_answer == test_question.answer:
+            test_score += 1
+        else:
+            test_score += 0
+    print("\n*End of Test*")
+    print("\nScore: " + str(round(100 / len(test_object) * test_score)) + "\n")
+    if test_score >= len(test_object) * 0.6:
+        print("You passed! Great job!\n")
+    else:
+        print("You failed. Try again.\n")
+
+
+test_function(test_object)
+
+
+# end
+            </code></pre>
+			<h5>"Colorless green ideas sleep furiously."</h5>
+			<iframe src="https://lichess.org/embed/XByYQdHK?theme=auto&bg=auto"
+                width=600 height=397 frameborder=0></iframe>
+		</main>
+		<footer id="" class="">
+            <hr/>
+			<a href="#top">top of page</a>
+			<hr/>
+			<a href="home.html">Back to Homepage</a>
+		</footer>
+	</body>
+</html>
