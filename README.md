@@ -1,5 +1,3 @@
 # Sage's Fanpage
 
----
-
-## Thanks for visiting!
+Thanks for visiting!

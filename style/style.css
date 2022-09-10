@@ -19,19 +19,19 @@
 
 /*global variables*/
 :root {
-    --sage: #9BA17B;
+  --sage: #9ba17b;
 }
 
 /*rem font size*/
 html {
   /*font-size: 62.5%;*/ /*base 10 rem*/
-    font-size: calc(1em + 1vw); /*responsive text*/
+  font-size: calc(1em + 1vw); /*responsive text*/
 }
 
 /*bg and others*/
 body {
   /*font-size: 100%;*/ /*IE font reset*/
-    background-color: var(--sage);
+  background-color: var(--sage);
 }
 /*======================================================================*/
 /*local selectors*/
@@ -40,38 +40,85 @@ body {
 /*background colors (color value = sage: #9BA17B)*/
 /*body {background-color: #9BA17B;}*/ /*declared above in global*/
 
-.red-bg {background-color: red;}
+.red-bg {
+  background-color: red;
+}
 
-.black-bg {background-color: black;}
+.black-bg {
+  background-color: black;
+}
 
 /*python projects*/
-code {color: blue;}
+code {
+  color: blue;
+}
 
 /*typefaces*/
-h1, h2, h3, h4, h5, h6 {font-family: Helvetica, sans-serif;}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: Helvetica, sans-serif;
+}
 
-p {font-family: Times New Roman, serif;} /*or Garamond*/
+p {
+  font-family: Times New Roman, serif;
+} /*or Garamond*/
 
 /*responsive text*/
 /*html {font-size: calc(1em + 1vw);}*/ /*declared above in global*/
 
 /*responsive image*/
 img {
-    max-width: 100%;
-    height: auto;
+  max-width: 100%;
+  height: auto;
 }
+
+/*custom 404 page*/
+.fzf {
+  display: block;
+  text-align: center;
+}
+.fzf h1 {
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  margin: 1em auto 0.5em;
+  font-size: 4em;
+}
+.fzf h2 {
+  display: inline-block;
+  text-align: center;
+  width: 300px;
+  margin: 1em auto 0.5em;
+}
+.fzf-button {
+  display: inline-block;
+  text-align: center;
+  width: 130px;
+  margin: 7em;
+  font-size: 16px;
+  text-decoration: none;
+  border: none;
+  padding: 15px 30px;
+  background: gray;
+  color: white;
+}
+
 /*======================================================================*/
 /*layout selectors*/
 /*======================================================================*/
 
 /*flexbox layout*/
 .flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 /*
@@ -82,8 +129,8 @@ img {
 
 /*random styles*/
 hr {
-    background-color: lightsalmon;
-    color: lightsalmon;
+  background-color: lightsalmon;
+  color: lightsalmon;
 }
 /*======================================================================*/
 /*end*/
